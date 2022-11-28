@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="./img/favicon.ico">
+
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/queries.css">
+    <link rel="stylesheet" href="./resources/themify-icons/themify-icons.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <div id="menu">
+        <div class="card js-card">
+            <div class="profile-card">
+                <div class="header-card">
+                    <div class="pic-efec">
+                        <img class="profile-pic" src="./resources/img/avatar.jpg" alt="error">
+                    </div>
+                    <h1 class="profile-card-Name">Nguyen Xuan Tuong An</h1>
+                    <p class="profile-card-info">Front-end Developer from VietNam</p>
+                    <p class="profile-card-info" style="color:#324e63 ;"><i class="ti-location-pin"></i> Dalat, LamDong
+                    </p>
+                </div>
+                <div class="body-card">
+                    <nav class="">
+                        <a href="https://www.facebook.com/profile.php?id=100008248898339"><i
+                                class="ti-facebook icon facebook-icon"></i></a>
+                        <a href="https://github.com/TuongAnDrummer"><i class="ti-github icon github-icon"></i></a>
+                        <a href="mailto:2111808@dlu.edu.vn"><i class="ti-email icon email-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/nguyen-xuan-tuong-an-15751a255/"><i
+                                class="ti-linkedin icon linkedin-icon"></i></a>
+                    </nav>
+                </div>
+                <div class="footer-card">
+                    <button class="btn js-my-project">My Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal__container">
+            <div class="modal-close js-modal__close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                My Project
+            </header>
+
+            <div class="modal-body">
+                <div class="modal-body-link">
+                    <ul>
+                        <li><a href="https://tuongandrummer.github.io/CV/">CV</a></li>
+                        <li><a href="https://tuongandrummer.github.io/Pearl-Drums/">Pearl-Drums</a></li>
+                        <li><a href="#">Project 3</a></li>
+                        <li><a href="#">Project 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const Btns = document.querySelectorAll('.js-my-project')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal__container')
+        const modalClose = document.querySelector('.js-modal__close')
+
+        function showMyProject() {
+            modal.classList.add('modal__open')
+        }
+
+        function hideMyProject() {
+            modal.classList.remove('modal__open')
+        }
+
+        for (const Btn of Btns) {
+            Btn.addEventListener('click', showMyProject)
+        }
+
+        modalClose.addEventListener('click', hideMyProject)
+
+        modal.addEventListener('click', hideMyProject)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+    </script>
+
+    <div class="body-loading js-body-loading">
+        <div class="loading">
+            <span style="--i:1">L</span>
+            <span style="--i:2">o</span>
+            <span style="--i:3">a</span>
+            <span style="--i:4">d</span>
+            <span style="--i:5">i</span>
+            <span style="--i:6">n</span>
+            <span style="--i:7">g</span>
+            <span style="--i:8">.</span>
+            <span style="--i:9">.</span>
+            <span style="--i:10">.</span>
+        </div>
+    </div>
+
+    <script>
+        const closeLoading = document.querySelector('.js-body-loading')
+        const card = document.querySelector('.js-card')
+
+        function hideLoading() {
+            closeLoading.classList.add('close')   
+        }
+        
+        function showCard() {
+            card.classList.add('card__open')
+        }
+
+        closeLoading.addEventListener('click', hideLoading)
+        closeLoading.addEventListener('click', showCard)
+    </script>
+</body>
+
+
+
+</html>
