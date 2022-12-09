@@ -16,7 +16,7 @@ html{
 }
 
 :root {
-  --card-height: 65vh;
+  --card-height: 600px;
   --card-width: calc(var(--card-height) / 1.5);
 }
 
@@ -26,8 +26,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 8rem;
-  padding-bottom: 2rem;
+  padding-top: 128px;
+  padding-bottom: 32px;
   box-sizing: border-box;
 }
 
@@ -43,7 +43,7 @@ body {
   align-items: center;
   text-align: center;
   display: none;
-  font-size: 1.5em;
+  font-size: 24px;
   color: rgb(88 199 250 / 0%);
   font-family: cursive;
 }
@@ -98,7 +98,6 @@ body {
 
 
 .pic-efec {
-  margin-left: 122px;
   transform: translateY(-55%);
   width: 40%;
   height: 160px;
@@ -106,8 +105,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  display: flex;
-  font-size: 1.5em;
+  display: inline-flex;
+  font-size: 24px;
   color: rgb(88 199 250 / 0%);
   font-family: cursive;
   z-index: 1;
@@ -258,7 +257,7 @@ body {
   align-items: center;
   text-align: center;
   display: inline;
-  font-size: 1.5em;
+  font-size: 24px;
   color: rgb(88 199 250 / 0%);
   font-family: cursive;
 }

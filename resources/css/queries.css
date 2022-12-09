@@ -1,142 +1,49 @@
-/* Big tablet to 1200px; */
-@media only screen and (max-width:1200px) {}
 
-/* Small tablet to big tablet from 768x to 1023px */
-@media only screen and (max-width:1023px) {
-   
-}
-
-
-/* Small phones to small tablets */
-@media only screen and (max-width: 767px) {
-    .body-card a .icon {
-        margin: 0 6px;
-    }
-
-    .footer-card {
-        margin-top: 24px;
-    }
-
-    .header-card {
-        margin-top: -40px;
-    }
-
+/* Mobile */
+@media only screen and (max-width: 739px) {
     .pic-efec {
-        transform: translateY(-70%);
-        margin-left: 135px;
-    width: 32%;
-    height: 130px;
+        transform: translateY(-55%);
+        width: 130px;
+        height: 130px;
     }
-
+    
     .profile-pic {
         width: 120px;
         height: 120px;
-        transform: translateY(-17%);
-    }
-
-    .body-card a .icon {
-        padding: 13px;
-        margin: 0 15px;
-    }
-
-    .footer-card {
-        margin-top: 42px;
-    }
-
-    .btn {
-        padding: 20px;
-        width: 80%;
-        font-size: 15px;
-    }
-
-    .profile-card-Name {
-        font-size: 24px;
-        margin-bottom: 24px;
-    }
-
-    .profile-card-info {
-        font-size: 20px;
-        margin-bottom: 24px;
+        transform: translateY(-18%);
+        margin-bottom: -41px;
     }
 }
 
-@media only screen and (max-width: 570px) {
+/*Tablet*/
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .pic-efec {
+        transform: translateY(-55%);
+        width: 140px;
+        height: 140px;
+    }
     
-}
-
-/* Small phones from 0 to 480px; */
-@media only screen and (max-width: 480px) {
-    .body-card a .icon {
-        margin: 0 6px;
-    }
-
-    .footer-card {
-        margin-top: 24px;
-    }
-
-    .header-card {
-        margin-top: -40px;
-    }
-
-    .pic-efec {
-        transform: translateY(-75%);
-        margin-left: 128px;
-        width: 36%;
-        height: 145px;
-    }
-
     .profile-pic {
-        width: 135px;
-        height: 135px;
-        transform: translateY(-15%);
-        border-radius: 50%;
-        margin-bottom: -40px;
+        width: 130px;
+        height: 130px;
+        transform: translateY(-16%);
+        margin-bottom: -41px;
     }
 }
 
-/* Iphone SE
-@media only screen and (max-width: 375px) and (max-height: 667px) {
-    .body-card a .icon {
-        margin: 0 6px;
-    }
-
-    .footer-card {
-        margin-top: 24px;
-    }
-
-    .header-card {
-        margin-top: -40px;
-    }
-
+/*PC*/
+@media only screen and (min-width: 1024px) {
     .pic-efec {
-        transform: translateY(-20%);
-        margin-left: 85px;
-        width: 45%;
+        transform: translateY(-55%);
+        width: 150px;
         height: 150px;
     }
-
+    
     .profile-pic {
-        width: 115px;
-        height: 115px;
-        transform: translateY(-25%);
+        width: 140px;
+        height: 140px;
+        transform: translateY(-14%);
         margin-bottom: -40px;
-        margin-left: -3px
     }
 
-    .pic-efec::before {
-        width: 101%;
-        height: 90%;
-    }
-
-    .profile-card-Name {
-        font-weight: 500;
-        font-size: 22px;
-        margin-bottom: 5px;
-    }
-
-    .body-card {
-        font-size: 25px;
-        margin-top: 30px;
-    }
-} */
-
+}
